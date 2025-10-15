@@ -17,11 +17,15 @@ Extract figures, embedded images, captions, and algorithm mentions from scientif
   - `figures/` — cropped figures
   - `images/` — embedded images
   - `structured_output.json` — consolidated results
-- Optional: `flask_app.py` — simple API (not required if you prefer single script)
 
 ## Setup
 
-Python dependencies (example)
+1) ```bash
+   git clone https://github.com/fear-the-lord/accrete-assignment.git
+   cd accrete-assignment/
+   ```
+
+2) Python dependencies (example)
 ```bash
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm

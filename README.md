@@ -1,5 +1,7 @@
 # PDF Visual Extractor
 
+Output Folder: https://drive.google.com/drive/folders/1zIdt-y-gjgqgtsi547J1BPsnPuDaqQLL?usp=sharing
+
 Extract figures, embedded images, captions, and algorithm mentions from scientific PDFs. Outputs cropped figures, extracted embedded images, and a structured JSON summary.
 
 ## Features

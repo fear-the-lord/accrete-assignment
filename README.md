@@ -114,6 +114,3 @@ You can swap EfficientDet for Detectron2 PubLayNet models for higher accuracy (r
 - `lp://PubLayNet/mask_rcnn_X_101_32x8d_FPN_3x/config` (heavier)
 
 If needed, install Detectron2 matching your PyTorch/CUDA version using their wheels. The script can be adapted to try Detectron2 first and fall back to EfficientDet.
-
-## License
-MIT (or specify your chosen license).

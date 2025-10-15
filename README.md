@@ -20,7 +20,8 @@ Extract figures, embedded images, captions, and algorithm mentions from scientif
 
 ## Setup
 
-1) ```bash
+1) Cloning 
+```bash
    git clone https://github.com/fear-the-lord/accrete-assignment.git
    cd accrete-assignment/
    ```
@@ -42,7 +43,7 @@ python document_sampler.py
 Outputs go to `outputs_local_ai/`:
 - `figures/`, `images/`, `structured_output.json`
 
-To run on your own PDF, edit `PDF_PATH` at the top of `document_sampler.py` or modify the script to accept a CLI flag (can be added on request).
+To run on your own PDF, edit `PDF_PATH` at the top of `document_sampler.py`
 
 ## Structured Output (JSON)
 Each entry is one of:
@@ -108,10 +109,3 @@ The code is organized into small functions:
 - Full CLI with flags for thresholds, model choices, and page ranges
 - Unit tests for extraction routines
 - Dockerfile + CI workflow
-
-## Optional: Higher-accuracy layout detector (Detectron2)
-You can swap EfficientDet for Detectron2 PubLayNet models for higher accuracy (requires Detectron2 install):
-- `lp://PubLayNet/faster_rcnn_R_50_FPN_3x/config` (fast, strong)
-- `lp://PubLayNet/mask_rcnn_X_101_32x8d_FPN_3x/config` (heavier)
-
-If needed, install Detectron2 matching your PyTorch/CUDA version using their wheels. The script can be adapted to try Detectron2 first and fall back to EfficientDet.

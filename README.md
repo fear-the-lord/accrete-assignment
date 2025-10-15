@@ -20,15 +20,10 @@ Extract figures, embedded images, captions, and algorithm mentions from scientif
 - Optional: `flask_app.py` — simple API (not required if you prefer single script)
 
 ## Setup
-1) Python and system packages
-```bash
-python3 --version   # 3.11 recommended
-sudo apt-get update
-```
 
-2) Python dependencies (example)
+Python dependencies (example)
 ```bash
-pip install pymupdf pillow layoutparser transformers spacy
+pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
 
